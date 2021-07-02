@@ -1,0 +1,174 @@
+<%- include('layouts/head.ejs') %>
+</head>
+<body>
+<%- include('layouts/navigation.ejs') %>
+
+    <section class="section-trophies">
+        <div class="trophies-h">
+            <h1>Naše úspěchy</h1>
+        </div>
+
+        <div class="row grid-trophy">
+            <div class="trophy">
+                <div class="trophy-width">
+                    <ion-icon class="trophy-icon" name="flag-outline"></ion-icon>
+                </div>
+
+                <div class="trophy-text">
+                    Držitel dvojnásobného mezinárodního ocenění za sportovní výkon a choreografii
+                    (Québec, Kodaň).
+                </div>
+            </div>
+
+            <div class="trophy">
+                <div class="trophy-width">
+                    <ion-icon class="trophy-icon" name="medal-outline"></ion-icon>
+                </div>
+
+                <div class="trophy-text">
+                    Několikanásobný mistr republiky v pódiových skladbách.
+                </div>
+            </div>
+
+            <div class="trophy">
+                <div class="trophy-width">
+                    <ion-icon class="trophy-icon" name="star-outline"></ion-icon>
+                </div>
+
+                <div class="trophy-text">
+                    Vícemistr soutěže Taneční skupina roku.
+                </div>
+            </div>
+
+            <div class="trophy">
+                <div class="trophy-width">
+                    <ion-icon class="trophy-icon" name="trophy-outline"></ion-icon>
+                </div>
+
+                <div class="trophy-text">
+                    Mistr světa 2019.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="year-number">
+        <div class="row year-number__content">
+            <div class="year-number-header">
+                <h1>Rok v číslech</h1>
+            </div>
+            <div class="year-number-grid">
+                <div class="year-number-grid__content">
+                    <div class="year-number-grid__content-c">
+                        <p>42 Tréninků</p>
+                        <div class="year-number-grid__content-icon">
+                            <ion-icon class="year-number-icon" name="body"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-number-grid__content">
+                    <div class="year-number-grid__content-c">
+                        <p>23 Vystoupení</p>
+                        <div class="year-number-grid__content-icon">
+                            <ion-icon class="year-number-icon" name="calendar"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="year-number-grid__content">
+                    <div class="year-number-grid__content-c">
+                        <p>16.000+ Diváků</p>
+                        <div class="year-number-grid__content-icon">
+                            <ion-icon class="year-number-icon" name="people"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-text">
+            <h2>Galerie</h2>
+            <p>Podívejte se na naše fotografie s vystoupení, soustředění a soutěží.</p>
+            <a class="btn" href="/Gallery">Přejít</a>
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+        <div class="picture">
+            <img src="/img/gallery/Universe_Hero.webp" alt="">
+        </div>
+    </section>
+
+    <section class="closest-perf">
+        <div class="row closest-perf-number">
+            <div class="closest-perf-number__left">
+                <div class="closest-perf-number__align">
+                    <h2>Naše nejbližší vystoupení</h2>
+                    <p>Zjistete kdy a kde nás můžete vidět.</p>
+                    <a href="/performances" class="btn">Vystoupení</a>
+                </div>
+            </div>
+            <div class="closest-perf-number__right">
+                <div class="closest-perf-number__right-table">
+                    <% if (perf.length > 0) { %> 
+                        <% for (performance of perf) { %>
+                            <div class="closest-perf-number__right-table__part">
+                                <p><%= performance.date %></p>
+                                <p><%= performance.location %></p>
+                                <p><%= performance.performance %></p>
+                            </div>
+                        <% } %>
+                    <% } else { %>
+                        <p>Žádná nadcházející vystoupení</p>
+                    <% } %>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="togo">
+        <div class="row togo-background">
+            <div class="togo-repertoar">
+                <div class="togo-repertoar__content">
+                    <h2>Chcete zjistit více?</h2>
+                    <p>Prozkoumejte nabídku naších skladeb.</p>
+                    <a href="#" class="btn btn-rep">Repertoár</a>
+                </div>
+            </div>
+
+            <div class="togo-form">
+                <div class="togo-form__content">  
+                    <form action="">
+                        <input type="text" name="name" placeholder="Jméno">
+                        <input type="email" name="email" placeholder="E-mail">
+                        <input type="text" name="subject" placeholder="Předmět">
+                        <textarea name="message" placeholder="Kontaktujte nás"></textarea>
+                        <button class="btn-form">Odeslat</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<%- include('layouts/footer.ejs')   %> 
+<%- include('layouts/end.ejs') %>

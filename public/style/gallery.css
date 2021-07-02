@@ -1,0 +1,26 @@
+.gallery-section {
+    background-color: hsla(180, 1%, 47%, 0.308);
+}
+
+.picture-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.gallery-picture {
+    background-color: #000;
+}
+
+.gallery-picture img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.7;
+}
+
+
+.gallery-h2 {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}

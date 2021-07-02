@@ -1,0 +1,48 @@
+.who {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.473)), url('../img/aboutus/background1.jpg');
+
+}
+
+.who-2 {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.473)), url('../img/aboutus/background2.png');
+
+}
+
+.who-3 {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.473)), url('../img/aboutus/background3.jpg');
+}
+
+.who,
+.who-2,
+.who-3 {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: red;
+    color: #fff;
+}
+
+.who-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 100%;
+}
+
+.who-display__content {
+    display: block;
+    text-align: center;
+}
+.who-display__content h2 {
+    padding-bottom: 3rem;
+    font-size: 4rem;
+    font-weight: 100;
+}
+
+.who-display__content p {
+    padding-bottom: 2rem;
+}

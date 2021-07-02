@@ -1,0 +1,26 @@
+<%- include('layouts/head.ejs') %>
+<link rel="stylesheet" href="/style/members.css">
+</head>
+<body>
+<%- include('layouts/navigation.ejs') %>
+    <section class="users-section">
+        <div class="users-section-h2">
+            <h2>Naši členové</h2>
+        </div>
+        <div class="row user-section__display">
+            <% if (user.length > 0) { %> 
+                <% for (let u of user) { %>
+                    <div class="user-section__container">
+                        <p><%= u.name %></p>
+                        <p><%= u.imageUrl %></p>
+                        <p>Od: <%= u.from %></p>
+                        <p>Do: <%= u.to %></p>
+                    </div>
+                <% } %> 
+            <% } else { %>
+                <p>No users</p>
+            <% } %>
+        </div>
+    </section>
+<%- include('layouts/footer.ejs')   %> 
+<%- include('layouts/end.ejs') %>

@@ -1,0 +1,457 @@
+/* 
+
+color: #ffffff;
+padding: 6rem, 12rem;
+
+
+*/
+
+
+
+
+/************************* 
+Default settings
+**************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/************************* 
+Reusable section
+**************************/
+
+.row {
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid hsl(178, 94%, 26%);
+    background-color:hsl(178, 94%, 26%);
+    padding: 0.6rem 1.8rem;
+    border-radius: 100px;
+}
+
+.btn:hover {
+    background-color: transparent;
+    transition: ease-in 0.2s;
+}
+
+
+
+.btn-form {
+    padding: 0.6rem 1.8rem;
+    border-radius: 100px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid hsl(178, 94%, 26%);
+}
+
+.btn-form:hover {
+    background-color: hsl(178, 94%, 26%);
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+/************************* 
+Nav section
+**************************/
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.473)), url(../img/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 6rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-nav__ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav__li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding-right: 1rem;
+    font-size: 110%;
+}
+
+.main-nav__li a:hover {
+    color: hsl(178, 94%, 26%);
+    transition: color 0.2s;
+}
+
+/************************* 
+Trophy section
+**************************/
+
+.section-trophies {
+    background-color: #ffffff;
+    padding-top: 6rem;
+    padding-bottom: 12rem;
+}
+
+
+
+.grid-trophy {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.trophy-width {
+    width: 100%;
+    text-align: center;
+}
+
+.trophy-icon {
+    font-size: 300%;
+    padding-bottom: 1rem;
+}
+
+
+.trophy-text {
+    text-align: center;
+    line-height: 140%;
+    font-size: 110%;
+}
+
+.trophies-h {
+    text-align: center;
+    padding-bottom: 6rem;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+/************************* 
+Closest perf section
+**************************/
+
+.closest-perf {
+    height: 40vh;
+    background-color: hsla(180, 1%, 47%, 0.308);
+}
+
+.closest-perf-number {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 100%;
+}
+
+.closest-perf-number__left,
+.closest-perf-number__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.closest-perf-number__align  {
+    line-height: 140%;
+}
+
+.closest-perf-number__align p {
+    padding-bottom: 1rem;
+}
+
+.closest-perf-number__align h2 {
+    padding-bottom: 2rem;
+}
+
+.closest-perf-number__right-table__part {
+    margin: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid hsl(178, 94%, 26%);
+    background-color: #fff;
+
+}
+
+.closest-perf-number__right-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+/************************* 
+Year in numbers section
+**************************/
+
+.year-number {
+    height: 60vh;
+    background-color: rgba(119, 121, 121, 0.308);
+}
+
+.year-number__content {
+    height: 100%;
+}
+
+.year-number-header {
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 150%;
+    font-weight: 200;
+}
+
+.year-number-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 6rem;
+}
+
+.year-number-grid__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.year-number-grid__content-c {
+    display: block;
+    text-align: center;
+}
+
+.year-number-grid__content-c p {
+    padding-bottom: 2rem;
+    font-weight: 600;
+}
+
+.year-number__content {
+    height: 100%;
+}
+
+.year-number-icon {
+    font-size: 400%;
+}
+
+/************************* 
+Gallery section
+**************************/
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    height: 60vh;
+}
+
+.picture {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.picture img {
+    width: 100%;
+    overflow: hidden;
+    transform: scale(1.40);
+    opacity: 0.7;
+}
+
+.picture img:hover {
+    transform: scale(1.36);
+    opacity: 1;
+    transition: transform 0.2s;
+}
+
+.gallery-text {
+    position: absolute;
+    color: #ffffff;
+    z-index: 10;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.gallery-text h2 {
+    margin-bottom: 1rem;
+}
+
+.gallery-text p {
+    margin-bottom: 1.5rem;
+}
+
+
+/************************* 
+Where to go section
+**************************/
+
+.togo {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.473)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.togo-background {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    height: 60vh;
+}
+
+/************************* 
+Where to go section - form section
+**************************/
+
+.togo-form {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.togo-form__content {
+    /* background-color: red; */
+    padding: 1rem;
+    text-align: center;
+}
+
+.togo-form__content input {
+    display: block;
+    width: 25rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.togo-form__content input:hover {
+    color: hsl(178, 94%, 26%);
+}
+
+.togo-form__content textarea {
+    display: block;
+    width: 25rem;
+    padding: 0.5rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    resize: none;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.togo-form__content textarea:hover {
+    color: hsl(178, 94%, 26%);
+}
+
+.togo-form__content button {
+    display: block;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/************************* 
+Where to go section - text section
+**************************/
+
+
+.togo-repertoar {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.togo-repertoar__content {
+    line-height: 140%;
+    text-align: center;
+}
+
+.togo-repertoar__content p{
+    padding-bottom: 2rem;
+}
+
+/************************* 
+Footer section
+**************************/
+
+
+/************************* 
+Year-number section
+**************************/
+
+
+.footer-section {
+    background-color: hsl(177, 8%, 46%);
+    height: 20vh;
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20vh;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    font-size: 150%;
+    padding-right: 1rem;
+}
+
+.yt {
+    color: hsl(177, 100%, 23%);
+}
+
+.ins {
+    color: hsl(177, 100%, 23%);
+}
+
+.fb {
+    color: hsl(177, 100%, 23%);
+}
+
+.yt:hover {
+    color: #FF0000;
+    transition: color 0.2s;
+}
+
+.ins:hover {
+    color:#E1306C;
+    transition: color 0.2s;
+
+}
+
+.fb:hover {
+    color: #4267B2;
+    transition: color 0.2s;
+}
+
+

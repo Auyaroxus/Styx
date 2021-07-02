@@ -1,0 +1,16 @@
+<%- include('layouts/head.ejs') %>
+<link rel="stylesheet" href="/style/performance.css">
+</head>
+<body>
+<%- include('layouts/navigation.ejs') %>
+    <section class="section-performace">
+        <% if (perf.length > 0) { %>
+            <% for (let p of perf) { %>
+                <h2><%= p.performance %></h2>
+                <p><%= p.date %></p>
+                <p><%= p.location %></p>
+            <% } %>
+        <% } %>
+    </section>    
+<%- include('layouts/footer.ejs')   %> 
+<%- include('layouts/end.ejs') %>
